@@ -1,0 +1,45 @@
+html,
+body {
+  background-color: #000;
+  color: #ffff00;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen {
+  height: 100%;
+}
+
+.wheel-svg {
+  margin-left: 10px;
+  border: 4px dashed yellow;
+  perspective: 300px;
+}
+
+.wheel-svg .term {
+  font-family: GothamLight, sans-serif;
+  font-size: 100px;
+  letter-spacing: -1px;
+  fill: #ffffff;
+  opacity: 0;
+}
+
+.wheel-svg .term.term03 {
+  opacity: 1;
+}
+
+.wheel-svg .term.term02,
+.wheel-svg .term.term04 {
+  opacity: 0.5;
+}
+
+.wheel-svg .term.term01,
+.wheel-svg .term.term05 {
+  opacity: 0.2;
+}
